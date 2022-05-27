@@ -9,3 +9,4 @@ Slides: https://www.dropbox.com/s/9dl2g9lypzqu5hp/liquid%20crystal%20particles.p
 Talk: https://www.youtube.com/watch?v=zZJJ_4JcMtQ
 
 Hedgehog Mathematica demonstration: https://demonstrations.wolfram.com/TopologicalChargesInBiaxialNematicLiquidCrystal/ of 2D interaction and phase evolution: https://demonstrations.wolfram.com/SeparationOfTopologicalSingularities/
+![alt text] (https://github.com/JarekDuda/liquid-crystals-particle-models/blob/main/diagram.jpg)
