@@ -1,0 +1,168 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7305,        160]
+NotebookOptionsPosition[      6952,        145]
+NotebookOutlinePosition[      7330,        161]
+CellTagsIndexPosition[      7287,        158]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`d$$ = 0.536, $CellContext`m$$ = 
+    2, $CellContext`ph$$ = 0, $CellContext`ph1$$ = 
+    0, $CellContext`s1$$ = -1, $CellContext`s2$$ = 1, $CellContext`xr$$ = 
+    1.5, $CellContext`yr$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold["left spin"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`s1$$], -1, Null}, {
+       Rational[-3, 2], -1, 
+       Rational[-1, 2], 0, 
+       Rational[1, 2], 1, 
+       Rational[3, 2]}}, {
+      Hold[" "], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["right spin"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`s2$$], 1, Null}, {
+       Rational[-3, 2], -1, 
+       Rational[-1, 2], 0, 
+       Rational[1, 2], 1, 
+       Rational[3, 2]}}, {
+      Hold[" "], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["distance"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`d$$], 0.6, Null}, 0, 1}, {
+      Hold[" "], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["phase shift"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`ph$$], 0, Null}, 0, Pi}, {
+      Hold[" "], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["arrows"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`m$$], 2, Null}, {
+      0 -> "yes", 1 -> "no", 2 -> "automatic"}}, {
+      Hold[" "], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["x range"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`xr$$], 1.5, Null}, 0.5, 2}, {
+      Hold["y range"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`yr$$], 1, Null}, 0.5, 1.5}, {
+      Hold["gluing direction"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`ph1$$], 0, Null}, 0, 2 Pi}}, Typeset`size$$ = {
+    600., {297., 303.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`s1$1435$$ = 
+    0, $CellContext`s2$1436$$ = 0, $CellContext`d$1437$$ = 
+    0, $CellContext`ph$1438$$ = 0, $CellContext`m$1439$$ = 
+    False, $CellContext`xr$1440$$ = 0, $CellContext`yr$1441$$ = 
+    0, $CellContext`ph1$1442$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`d$$ = 0.6, $CellContext`m$$ = 
+        2, $CellContext`ph$$ = 0, $CellContext`ph1$$ = 
+        0, $CellContext`s1$$ = -1, $CellContext`s2$$ = 1, $CellContext`xr$$ = 
+        1.5, $CellContext`yr$$ = 1}, "ControllerVariables" :> {
+        Hold[$CellContext`s1$$, $CellContext`s1$1435$$, 0], 
+        Hold[$CellContext`s2$$, $CellContext`s2$1436$$, 0], 
+        Hold[$CellContext`d$$, $CellContext`d$1437$$, 0], 
+        Hold[$CellContext`ph$$, $CellContext`ph$1438$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$1439$$, False], 
+        Hold[$CellContext`xr$$, $CellContext`xr$1440$$, 0], 
+        Hold[$CellContext`yr$$, $CellContext`yr$1441$$, 0], 
+        Hold[$CellContext`ph1$$, $CellContext`ph1$1442$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> ($CellContext`f = ((
+           Exp[I ($CellContext`ph$$ - ($CellContext`s1$$ + $CellContext`s2$$) \
+$CellContext`ph1$$)] I) 
+          Sqrt[Exp[
+              I $CellContext`ph1$$] ($CellContext`z + $CellContext`d$$)]^(
+            2 $CellContext`s1$$)) 
+         Sqrt[Exp[I $CellContext`ph1$$] ($CellContext`d$$ - $CellContext`z)]^(
+           2 $CellContext`s2$$); $CellContext`g = ReplaceAll[{
+            Re[$CellContext`f], 
+            Im[$CellContext`f]}/
+          Abs[$CellContext`f], $CellContext`z -> $CellContext`x + 
+           I $CellContext`y]; 
+       StreamPlot[$CellContext`g, {$CellContext`x, -$CellContext`xr$$, \
+$CellContext`xr$$}, {$CellContext`y, -$CellContext`yr$$, $CellContext`yr$$}, 
+         ImageSize -> {500, 500}, StreamStyle -> If[
+           Or[$CellContext`m$$ == 0, 
+            And[$CellContext`m$$ == 2, 
+             IntegerQ[($CellContext`s1$$ + 2) ($CellContext`s2$$ + 2)]]], 
+           "Arrow", "Line"]]), 
+      "Specifications" :> {"left spin", {{$CellContext`s1$$, -1, Null}, {
+          Rational[-3, 2], -1, 
+          Rational[-1, 2], 0, 
+          Rational[1, 2], 1, 
+          Rational[3, 2]}, ControlType -> SetterBar}, " ", 
+        "right spin", {{$CellContext`s2$$, 1, Null}, {
+          Rational[-3, 2], -1, 
+          Rational[-1, 2], 0, 
+          Rational[1, 2], 1, 
+          Rational[3, 2]}, ControlType -> SetterBar}, " ", 
+        "distance", {{$CellContext`d$$, 0.6, Null}, 0, 1, ImageSize -> Small},
+         " ", "phase shift", {{$CellContext`ph$$, 0, Null}, 0, Pi, ImageSize -> 
+         Small}, Delimiter, " ", 
+        "arrows", {{$CellContext`m$$, 2, Null}, {
+         0 -> "yes", 1 -> "no", 2 -> "automatic"}}, " ", 
+        "x range", {{$CellContext`xr$$, 1.5, Null}, 0.5, 2, ImageSize -> 
+         Small}, "y range", {{$CellContext`yr$$, 1, Null}, 0.5, 1.5, 
+         ImageSize -> Small}, 
+        "gluing direction", {{$CellContext`ph1$$, 0, Null}, 0, 2 Pi, 
+         ImageSize -> Small}}, "Options" :> {ControlPlacement -> Left}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{821., {333., 340.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.35696210375764*^9, 3.460119707541*^9, 3.4601197682636003`*^9, 
+   3.4601197984184*^9, 3.4601198359676*^9, 3.4601199718124*^9, {
+   3.4601200465052*^9, 3.4601200715744*^9}, {3.4601201538644*^9, 
+   3.4601201762348003`*^9}, {3.4601204607776003`*^9, 3.460120480574*^9}, 
+   3.4601205241136*^9, 3.460120679552*^9, 3.460120783526*^9, 
+   3.4601208646772003`*^9, 3.4601209304156*^9, 3.4601212588736*^9, 
+   3.4601331534744*^9, {3.467346280376*^9, 3.467346308575*^9}},
+ CellID->357542516,ExpressionUUID->"139db4ca-e35f-4b26-a208-d356eb4c7895"]
+},
+WindowSize->{1288, 673},
+WindowMargins->{{25, Automatic}, {Automatic, 31}},
+Magnification:>1.2 Inherited,
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 6390, 123, 695, "Output",ExpressionUUID->"139db4ca-e35f-4b26-a208-d356eb4c7895",
+ CellID->357542516]
+}
+]
+*)
+

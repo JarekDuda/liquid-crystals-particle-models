@@ -1,0 +1,398 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15676,        390]
+NotebookOptionsPosition[     15109,        371]
+NotebookOutlinePosition[     15591,        389]
+CellTagsIndexPosition[     15548,        386]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"M", "=", 
+     RowBox[{
+      RowBox[{"MM", "[", 
+       RowBox[{"[", "tp", "]"}], "]"}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"cp", "->", "c"}], ",", 
+        RowBox[{"rp", "->", "r"}], ",", 
+        RowBox[{"rrp", "->", "rr"}], ",", 
+        RowBox[{"rrrp", "->", "rrr"}], ",", 
+        RowBox[{"Qp", "->", "Q"}], ",", 
+        RowBox[{"qp", "->", "q"}]}], "}"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Graphics3D", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"Ellipsoid", "[", 
+           RowBox[{"p", ",", 
+            RowBox[{"M", "/.", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"x", "->", 
+                RowBox[{"p", "[", 
+                 RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+               RowBox[{"y", "->", 
+                RowBox[{"p", "[", 
+                 RowBox[{"[", "2", "]"}], "]"}]}], ",", 
+               RowBox[{"z", "->", 
+                RowBox[{"p", "[", 
+                 RowBox[{"[", "3", "]"}], "]"}]}]}], "}"}]}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"p", ",", 
+            RowBox[{"SpherePoints", "[", "n", "]"}]}], "}"}]}], "]"}], ",", 
+        "Gray", ",", 
+        RowBox[{"Opacity", "[", "0.9", "]"}], ",", 
+        RowBox[{"Sphere", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "1"}], "]"}], ",", 
+        "Thick", ",", "Blue", ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0", ",", 
+             RowBox[{"-", "1.0"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0", ",", "1.0"}], "}"}]}], "}"}], "]"}]}], 
+       "}"}], ",", 
+      RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"500", ",", "500"}], "}"}]}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", "\"\<defect type:\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"tp", ",", "1", ",", "\"\<\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", "->", "\"\<e\>\""}], ",", 
+       RowBox[{"2", "->", "\"\<\[Mu]\>\""}], ",", 
+       RowBox[{"3", "->", "\"\<\[Tau]\>\""}]}], "}"}]}], "}"}], ",", 
+   "\"\<evolving phase:\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"c", ",", "0", ",", "\"\<\[Psi]\>\""}], "}"}], ",", "0", ",", 
+     "Pi", ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "}"}], ",", 
+   RowBox[{"Row", "[", 
+    RowBox[{"{", 
+     RowBox[{"\"\<lattitude q=\>\"", ",", 
+      RowBox[{"Dynamic", "[", "q", "]"}], ",", "\"\<   longitude Q=\>\"", ",", 
+      RowBox[{"Dynamic", "[", "Q", "]"}]}], "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"q", ",", "1", ",", "\"\<q\>\""}], "}"}], ",", 
+     RowBox[{"-", "5"}], ",", "5", ",", "1", ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Q", ",", "1", ",", "\"\<Q\>\""}], "}"}], ",", 
+     RowBox[{"-", "5"}], ",", "5", ",", "1", ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "}"}], ",", "Delimiter", 
+   ",", "\"\<      axes lengths:\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"r", ",", "0.1", ",", "\"\<1\>\""}], "}"}], ",", "0.01", ",", 
+     "1", ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"rr", ",", "0.1", ",", "\"\<2\>\""}], "}"}], ",", "0.01", ",", 
+     "1", ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"rrr", ",", "0.1", ",", "\"\<3\>\""}], "}"}], ",", "0.01", ",", 
+     "1", ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "}"}], ",", 
+   RowBox[{"Row", "[", 
+    RowBox[{"{", 
+     RowBox[{"\"\<number of ellipsoids: \>\"", ",", 
+      RowBox[{"Dynamic", "[", "n", "]"}]}], "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "300", ",", "\"\<\>\""}], "}"}], ",", "10", ",", 
+     "1000", ",", "1", ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Initialization", "\[RuleDelayed]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"perm", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Mod", "[", 
+             RowBox[{
+              RowBox[{"j", "+", "i"}], ",", "3"}], "]"}], "==", "k"}], ",", 
+           "1", ",", "0"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "0", ",", "2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", "0", ",", "2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "0", ",", "2"}], "}"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"rx", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", 
+           RowBox[{"-", "1"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "}"}]}], ";", 
+      RowBox[{"ry", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", 
+           RowBox[{"-", "1"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "}"}]}], ";", 
+      RowBox[{"rz", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", 
+           RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"MM", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"R", "=", 
+           RowBox[{"Simplify", "[", 
+            RowBox[{
+             RowBox[{"MatrixExp", "[", 
+              RowBox[{"a", "*", "rz"}], "]"}], ".", 
+             RowBox[{"MatrixExp", "[", 
+              RowBox[{"b", "*", "ry"}], "]"}], ".", 
+             RowBox[{"perm", "[", 
+              RowBox[{"[", "i", "]"}], "]"}], ".", 
+             RowBox[{"MatrixExp", "[", 
+              RowBox[{"cp", "*", "rx"}], "]"}]}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Simplify", "[", 
+           RowBox[{
+            RowBox[{"R", ".", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"rp", ",", "0", ",", "0"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"0", ",", 
+                 RowBox[{"rp", "*", "rrp"}], ",", "0"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"0", ",", "0", ",", 
+                 RowBox[{"rp", "*", "rrp", "*", "rrrp"}]}], "}"}]}], "}"}], 
+             ".", 
+             RowBox[{"Transpose", "[", "R", "]"}]}], "/.", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"a", "->", 
+               RowBox[{"Qp", "*", 
+                RowBox[{"ArcTan", "[", 
+                 RowBox[{"x", ",", "y"}], "]"}]}]}], ",", 
+              RowBox[{"b", "->", 
+               RowBox[{"qp", "*", 
+                RowBox[{"ArcTan", "[", 
+                 RowBox[{
+                  RowBox[{"Sqrt", "[", 
+                   RowBox[{
+                    RowBox[{"x", "^", "2"}], "+", 
+                    RowBox[{"y", "^", "2"}]}], "]"}], ",", "z"}], "]"}]}]}]}],
+              "}"}]}], "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "3"}], "}"}]}], "]"}]}], ";"}], ")"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8450330799221883`*^9, 3.8450331209446363`*^9}, {
+   3.845033256918544*^9, 3.845033275698601*^9}, {3.8450333772187996`*^9, 
+   3.8450334178589673`*^9}, {3.845033465298788*^9, 3.8450334756391697`*^9}, {
+   3.845033526938772*^9, 3.845033551232336*^9}, 
+   3.845033591639016*^9},ExpressionUUID->"a6b06d31-b646-43a4-8b39-\
+23d62270f6b3"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`c$$ = 
+    1.7914471553332703`, $CellContext`n$$ = 300, $CellContext`q$$ = 
+    1, $CellContext`Q$$ = 1, $CellContext`r$$ = 0.1, $CellContext`rr$$ = 
+    0.1, $CellContext`rrr$$ = 0.1, $CellContext`tp$$ = 1, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold["defect type:"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`tp$$], 1, ""}, {
+      1 -> "e", 2 -> "\[Mu]", 3 -> "\[Tau]"}}, {
+      Hold["evolving phase:"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`c$$], 0, "\[Psi]"}, 0, Pi}, {
+      Hold[
+       Row[{"lattitude q=", 
+         Dynamic[$CellContext`q$$], "   longitude Q=", 
+         Dynamic[$CellContext`Q$$]}]], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`q$$], 1, "q"}, -5, 5, 1}, {{
+       Hold[$CellContext`Q$$], 1, "Q"}, -5, 5, 1}, {
+      Hold["      axes lengths:"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`r$$], 0.1, "1"}, 0.01, 1}, {{
+       Hold[$CellContext`rr$$], 0.1, "2"}, 0.01, 1}, {{
+       Hold[$CellContext`rrr$$], 0.1, "3"}, 0.01, 1}, {
+      Hold[
+       Row[{"number of ellipsoids: ", 
+         Dynamic[$CellContext`n$$]}]], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`n$$], 300, ""}, 10, 1000, 1}}, Typeset`size$$ = {
+    600., {297., 303.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`c$$ = 0, $CellContext`n$$ = 
+        300, $CellContext`q$$ = 1, $CellContext`Q$$ = 1, $CellContext`r$$ = 
+        0.1, $CellContext`rr$$ = 0.1, $CellContext`rrr$$ = 
+        0.1, $CellContext`tp$$ = 1}, "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`M = ReplaceAll[
+          
+          Part[$CellContext`MM, $CellContext`tp$$], {$CellContext`cp -> \
+$CellContext`c$$, $CellContext`rp -> $CellContext`r$$, $CellContext`rrp -> \
+$CellContext`rr$$, $CellContext`rrrp -> $CellContext`rrr$$, $CellContext`Qp -> \
+$CellContext`Q$$, $CellContext`qp -> $CellContext`q$$}]; Graphics3D[{
+          Table[
+           Ellipsoid[$CellContext`p, 
+            
+            ReplaceAll[$CellContext`M, {$CellContext`x -> 
+              Part[$CellContext`p, 1], $CellContext`y -> 
+              Part[$CellContext`p, 2], $CellContext`z -> 
+              Part[$CellContext`p, 3]}]], {$CellContext`p, 
+            SpherePoints[$CellContext`n$$]}], Gray, 
+          Opacity[0.9], 
+          Sphere[{0, 0, 0}, 1], Thick, Blue, 
+          Line[{{0, 0, -1.}, {0, 0, 1.}}]}, Boxed -> False, 
+         ImageSize -> {500, 500}]), 
+      "Specifications" :> {
+       "defect type:", {{$CellContext`tp$$, 1, ""}, {
+         1 -> "e", 2 -> "\[Mu]", 3 -> "\[Tau]"}}, 
+        "evolving phase:", {{$CellContext`c$$, 0, "\[Psi]"}, 0, Pi, ImageSize -> 
+         Small}, 
+        Row[{"lattitude q=", 
+          Dynamic[$CellContext`q$$], "   longitude Q=", 
+          Dynamic[$CellContext`Q$$]}], {{$CellContext`q$$, 1, "q"}, -5, 5, 1, 
+         ImageSize -> Small}, {{$CellContext`Q$$, 1, "Q"}, -5, 5, 1, 
+         ImageSize -> Small}, Delimiter, 
+        "      axes lengths:", {{$CellContext`r$$, 0.1, "1"}, 0.01, 1, 
+         ImageSize -> Small}, {{$CellContext`rr$$, 0.1, "2"}, 0.01, 1, 
+         ImageSize -> Small}, {{$CellContext`rrr$$, 0.1, "3"}, 0.01, 1, 
+         ImageSize -> Small}, 
+        Row[{"number of ellipsoids: ", 
+          Dynamic[$CellContext`n$$]}], {{$CellContext`n$$, 300, ""}, 10, 1000,
+          1, ImageSize -> Small}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{913., {331.56083984375, 338.43916015625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(($CellContext`perm = Table[
+         If[
+         Mod[$CellContext`j + $CellContext`i, 3] == $CellContext`k, 1, 
+          0], {$CellContext`i, 0, 2}, {$CellContext`j, 0, 2}, {$CellContext`k,
+           0, 2}]; $CellContext`rx = {{0, 0, 0}, {0, 0, -1}, {0, 1, 
+        0}}; $CellContext`ry = {{0, 0, -1}, {0, 0, 0}, {1, 0, 
+        0}}; $CellContext`rz = {{0, -1, 0}, {1, 0, 0}, {0, 0, 
+        0}}; $CellContext`MM = Table[$CellContext`R = Simplify[
+            Dot[
+             MatrixExp[$CellContext`a $CellContext`rz], 
+             MatrixExp[$CellContext`b $CellContext`ry], 
+             Part[$CellContext`perm, $CellContext`i], 
+             MatrixExp[$CellContext`cp $CellContext`rx]]]; Simplify[
+           ReplaceAll[
+            
+            Dot[$CellContext`R, {{$CellContext`rp, 0, 0}, {
+              0, $CellContext`rp $CellContext`rrp, 0}, {
+              0, 0, $CellContext`rp $CellContext`rrp $CellContext`rrrp}}, 
+             
+             Transpose[$CellContext`R]], {$CellContext`a -> $CellContext`Qp 
+              ArcTan[$CellContext`x, $CellContext`y], $CellContext`b -> \
+$CellContext`qp ArcTan[
+                
+                Sqrt[$CellContext`x^2 + $CellContext`y^2], \
+$CellContext`z]}]], {$CellContext`i, 3}]; Null); Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.84503312201466*^9, 3.845033280468933*^9, {3.845033418509087*^9, 
+   3.845033423309016*^9}, {3.845033485438777*^9, 3.8450334995588865`*^9}, {
+   3.8450335613663177`*^9, 3.8450335706413603`*^9}},
+ CellLabel->"Out[1]=",ExpressionUUID->"401df7d0-83f0-49aa-a11a-fa9287aae738"]
+}, Open  ]]
+},
+WindowSize->{1142.1, 648.9},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+TaggingRules->Association["TryRealOnly" -> False],
+Magnification:>1.2 Inherited,
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (June 19, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5f76b28a-6d71-4dea-beb6-6c1d38fc9bc4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 8431, 228, 401, "Input",ExpressionUUID->"a6b06d31-b646-43a4-8b39-23d62270f6b3"],
+Cell[9014, 252, 6079, 116, 692, "Output",ExpressionUUID->"401df7d0-83f0-49aa-a11a-fa9287aae738"]
+}, Open  ]]
+}
+]
+*)
+
