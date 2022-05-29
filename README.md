@@ -8,6 +8,8 @@ Main article: https://arxiv.org/pdf/2108.07896
 
 Slides: https://www.dropbox.com/s/9dl2g9lypzqu5hp/liquid%20crystal%20particles.pdf
 
+Soliton slides: https://www.dropbox.com/s/aj6tu93n04rcgra/soliton.pdf
+
 Talk: https://www.youtube.com/watch?v=zZJJ_4JcMtQ
 
 Calculation of 3D equations, leading to ~Klein-Gordon for hedgehog ansatz: liquid crystal particles-3Dequation and hedgehog.nb
