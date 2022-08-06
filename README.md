@@ -16,6 +16,8 @@ Talk: https://www.youtube.com/watch?v=zZJJ_4JcMtQ
 
 **liquid crystal particles-4Dequation.nb** - derivation of 4D equations, leading to addtional Maxwell equations for GEM ( https://en.wikipedia.org/wiki/Gravitoelectromagnetism ) 
 
+**Coulomb liquid crystal.nb** - calculating effective potential for two topological charges by integrating energy density, getting Coulomb attraction/repulsion
+
 Hedgehog Mathematica demonstration: https://demonstrations.wolfram.com/TopologicalChargesInBiaxialNematicLiquidCrystal/, of 2D interaction and phase evolution: https://demonstrations.wolfram.com/SeparationOfTopologicalSingularities/
 
 ![alt text](https://github.com/JarekDuda/liquid-crystals-particle-models/blob/main/diagram.jpg?raw=true)
