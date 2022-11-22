@@ -10,7 +10,7 @@ Slides: https://www.dropbox.com/s/9dl2g9lypzqu5hp/liquid%20crystal%20particles.p
 
 Soliton slides: https://www.dropbox.com/s/aj6tu93n04rcgra/soliton.pdf
 
-Talk: https://www.youtube.com/watch?v=zZJJ_4JcMtQ
+Talk: https://youtu.be/zZJJ_4JcMtQ or more recent https://youtu.be/i5xme6nTLw0
 
 **liquid crystal particles-3Dequation and hedgehog.nb** - derivation of 3D Maxwell-like equations, also ~Klein-Gordon for hedgehog ansatz
 
