@@ -1,5 +1,5 @@
 # liquid-crystals-particle-models
-Exploring resemblance between topological defects in liquid crystals and particle physics - gathered links and implementations
+Exploring resemblance between topological defects in liquid crystals and particle physics - gathered links and implementations. 
 Jarek Duda, 2022
 
 Basic idea ([Manfried Faber](https://www.mdpi.com/2218-1997/8/2/73/htm)): define curvature of liquid-crystal-like field as EM field, this way Gauss law counts topological charge - leading to electromagnetism with built-in charge quantization, also repairing the problem of infinite energy of point charge.
