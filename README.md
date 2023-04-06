@@ -6,6 +6,8 @@ Basic idea ([Manfried Faber](https://www.mdpi.com/2218-1997/8/2/73/htm), [agreem
 
 Main article: https://arxiv.org/pdf/2108.07896
 
+Light introduction with Mathematica sources: https://community.wolfram.com/groups/-/m/t/2856493
+
 Slides: https://www.dropbox.com/s/9dl2g9lypzqu5hp/liquid%20crystal%20particles.pdf
 
 Soliton slides: https://www.dropbox.com/s/aj6tu93n04rcgra/soliton.pdf
