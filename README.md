@@ -23,5 +23,3 @@ Talk: https://youtu.be/I6e3GnJhpf4 or https://youtu.be/jxIbLP-ok8Q or https://yo
 Hedgehog Mathematica demonstration: https://demonstrations.wolfram.com/TopologicalChargesInBiaxialNematicLiquidCrystal/, of 2D interaction and phase evolution: https://demonstrations.wolfram.com/SeparationOfTopologicalSingularities/
 
 ![alt text](https://github.com/JarekDuda/liquid-crystals-particle-models/blob/main/CoulombCaption.png?raw=true)
-
-![alt text](https://github.com/JarekDuda/pn-junction-diffusion-model/blob/main/pn%20junction%20diffusion%20model.jpg?raw=true)
