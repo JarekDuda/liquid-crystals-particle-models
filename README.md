@@ -24,4 +24,4 @@ Hedgehog Mathematica demonstration: https://demonstrations.wolfram.com/Topologic
 
 ![alt text](https://github.com/JarekDuda/liquid-crystals-particle-models/blob/main/CoulombCaption.png?raw=true)
 
-![alt text](https://github.com/JarekDuda/liquid-crystals-particle-models/blob/main/diagram.jpg?raw=true)
+![alt text](https://github.com/JarekDuda/pn-junction-diffusion-model/blob/main/pn%20junction%20diffusion%20model.jpg?raw=true)
